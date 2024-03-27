@@ -1,0 +1,26 @@
+using System;
+
+namespace AccountingSoftware
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double income, expenses;
+
+            Console.Write("Enter your income: ");
+            income = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter your expenses: ");
+            expenses = Convert.ToDouble(Console.ReadLine());
+
+            double total = income - expenses;
+
+            Console.WriteLine("Your total income is: " + income);
+            Console.WriteLine("Your total expenses is: " + expenses);
+            Console.WriteLine("Your total profit is: " + total);
+
+            Console.ReadLine();
+        }
+    }
+}
